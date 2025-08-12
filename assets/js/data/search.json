@@ -1,4 +1,13 @@
 [
   
+  {
+    "title": "Java 클래스 요약",
+    "url": "/posts/java-class-summary/",
+    "categories": "Java, Study",
+    "tags": "class, OOP, beginner",
+    "date": "2025-08-12 15:00:00 +0900",
+    "content": "Java 클래스란?     클래스는 객체의 설계도입니다.   자바에서 모든 것은 클래스에서 시작합니다.   ```java public class Car {     String color;     void drive() {         System.out.println(“달립니다!!!”);     } } "
+  }
+  
 ]
 
