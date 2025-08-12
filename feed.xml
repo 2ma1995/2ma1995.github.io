@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Chirpy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-08-12T15:09:29+09:00</updated>
+  <updated>2025-08-12T15:20:31+09:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>/</uri>
@@ -24,7 +24,7 @@
     <link href="/posts/java-class-summary/" rel="alternate" type="text/html" title="Java 클래스 요약" />
     <published>2025-08-12T15:00:00+09:00</published>
   
-    <updated>2025-08-12T15:08:44+09:00</updated>
+    <updated>2025-08-12T15:19:32+09:00</updated>
   
     <id>/posts/java-class-summary/</id>
     <content type="text/html" src="/posts/java-class-summary/" />
@@ -40,7 +40,7 @@
     
   
 
-  <summary>Java 클래스란?     클래스는 객체의 설계도입니다.   자바에서 모든 것은 클래스에서 시작합니다.   ```java public class Car {     String color;     void drive() {         System.out.println(“달립니다!!!”);     } }</summary>
+  <summary>Java 클래스란?     클래스는 객체의 설계도입니다.   자바에서 모든 것은 클래스에서 시작합니다.   public class Car {     String color;     void drive() {         System.out.println("달립니다!!!");     } }</summary>
 
   </entry>
 
