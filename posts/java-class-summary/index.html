@@ -32,8 +32,8 @@
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Java 클래스 요약" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Java 클래스란?" />
-<meta property="og:description" content="Java 클래스란?" />
+<meta name="description" content="📌 클래스와 데이터 문제상황 학생 정보를 다룰 때 이름, 나이, 성적 등 여러 데이터를 저장해야 함 변수로 처리하면: 학생 1명당 3개의 변수 필요 → 학생 늘어나면 코드 폭발 배열로 처리하면: 데이터가 나뉘어 저장됨 → 인덱스 관리 어려움, 실수 위험" />
+<meta property="og:description" content="📌 클래스와 데이터 문제상황 학생 정보를 다룰 때 이름, 나이, 성적 등 여러 데이터를 저장해야 함 변수로 처리하면: 학생 1명당 3개의 변수 필요 → 학생 늘어나면 코드 폭발 배열로 처리하면: 데이터가 나뉘어 저장됨 → 인덱스 관리 어려움, 실수 위험" />
 <link rel="canonical" href="/posts/java-class-summary/" />
 <meta property="og:url" content="/posts/java-class-summary/" />
 <meta property="og:site_name" content="myNote" />
@@ -43,7 +43,7 @@
 <meta property="twitter:title" content="Java 클래스 요약" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-12T15:19:32+09:00","datePublished":"2025-08-12T15:00:00+09:00","description":"Java 클래스란?","headline":"Java 클래스 요약","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/java-class-summary/"},"url":"/posts/java-class-summary/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-13T16:38:20+09:00","datePublished":"2025-08-12T15:00:00+09:00","description":"📌 클래스와 데이터 문제상황 학생 정보를 다룰 때 이름, 나이, 성적 등 여러 데이터를 저장해야 함 변수로 처리하면: 학생 1명당 3개의 변수 필요 → 학생 늘어나면 코드 폭발 배열로 처리하면: 데이터가 나뉘어 저장됨 → 인덱스 관리 어려움, 실수 위험","headline":"Java 클래스 요약","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/java-class-summary/"},"url":"/posts/java-class-summary/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -213,9 +213,16 @@
 
   
 
+  
+    
+
+    
+
+  
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js,npm/tocbot@4.32.2/dist/tocbot.min.js"></script>
 
 
 
@@ -516,10 +523,96 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -546,7 +639,7 @@
 
 
 
-<article class="px-1" data-toc="false">
+<article class="px-1" data-toc="true">
   <header>
     <h1 data-toc-skip>Java 클래스 요약</h1>
     
@@ -590,13 +683,13 @@
 
 <time
   
-  data-ts="1754979572"
+  data-ts="1755070700"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Aug 12, 2025
+  Aug 13, 2025
 </time>
 
         </span>
@@ -643,9 +736,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="62 words"
+  title="550 words"
 >
-  <em>1 min</em> read</span>
+  <em>3 min</em> read</span>
 
         </div>
       </div>
@@ -653,14 +746,41 @@
   </header>
 
   
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">Java 클래스 요약</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">Contents</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">Java 클래스 요약</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
 
   <div class="content">
-    <h1 id="java-클래스란">Java 클래스란?</h1>
-
+    <h1 id="-클래스와-데이터">📌 클래스와 데이터</h1>
+<h3 id="문제상황"><span class="me-2">문제상황</span><a href="#문제상황" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <ul>
-  <li>클래스는 객체의 설계도입니다.</li>
-  <li>자바에서 모든 것은 클래스에서 시작합니다.</li>
+  <li>학생 정보를 다룰 때 이름, 나이, 성적 등 여러 데이터를 저장해야 함</li>
+  <li>변수로 처리하면: 학생 1명당 3개의 변수 필요 → 학생 늘어나면 코드 폭발</li>
+  <li>배열로 처리하면: 데이터가 나뉘어 저장됨 → 인덱스 관리 어려움, 실수 위험</li>
 </ul>
+
+<hr />
+
+<h2 id="해결책-클래스"><span class="me-2">해결책: 클래스</span><a href="#해결책-클래스" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
@@ -669,12 +789,108 @@
 3
 4
 5
-6
-</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Car</span> <span class="o">{</span>
-    <span class="nc">String</span> <span class="n">color</span><span class="o">;</span>
-    <span class="kt">void</span> <span class="nf">drive</span><span class="o">()</span> <span class="o">{</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"달립니다!!!"</span><span class="o">);</span>
-    <span class="o">}</span>
+</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Student</span> <span class="o">{</span>
+  <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+  <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+  <span class="kt">int</span> <span class="n">grade</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+<p>하나의 객체에 관련 데이터를 묶어서 표현</p>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nc">Student</span> <span class="n">student1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Student</span><span class="o">();</span> 
+<span class="n">student1</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">"학생"</span><span class="o">;</span>
+<span class="n">student1</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="mi">15</span><span class="o">;</span>
+<span class="n">student1</span><span class="o">.</span><span class="na">grade</span> <span class="o">=</span> <span class="mi">90</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></div></div>
+<ul>
+  <li>객체 생성: new 클래스명()</li>
+  <li>객체 참조: 객체변수.멤버변수</li>
+</ul>
+
+<h1 id="-자바-클래스-핵심-요약">✅ 자바 클래스 핵심 요약</h1>
+
+<hr />
+
+<h2 id="-클래스--사용자-정의-타입"><span class="me-2">✅ 클래스 = 사용자 정의 타입</span><a href="#-클래스--사용자-정의-타입" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">int</code>, <code class="language-plaintext highlighter-rouge">String</code>처럼 직접 만든 <strong>데이터 타입</strong>이 될 수 있음</li>
+  <li>클래스를 사용하면 현실 세계의 개념(학생, 자동차 등)을 프로그래밍 세계에 맞게 표현할 수 있음</li>
+  <li><strong>클래스는 설계도</strong>, 객체는 그 설계도로 만들어진 <strong>실제 실체 (= 인스턴스)</strong></li>
+</ul>
+
+<hr />
+
+<h2 id="-클래스-도입-효과"><span class="me-2">✅ 클래스 도입 효과</span><a href="#-클래스-도입-효과" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>방법</th>
+      <th>단점 또는 문제점</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>변수</td>
+      <td>학생 늘어나면 변수 폭발</td>
+    </tr>
+    <tr>
+      <td>배열</td>
+      <td>관련 데이터가 배열로 나뉘어 관리 어려움</td>
+    </tr>
+    <tr>
+      <td>클래스</td>
+      <td>✅ 관련 데이터를 묶어 구조화, 유지보수 용이</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<hr />
+
+<h2 id="-용어-정리"><span class="me-2">✅ 용어 정리</span><a href="#-용어-정리" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ul>
+  <li>
+    <dl>
+      <dt><strong>클래스(Class)</strong></dt>
+      <dd>객체를 만들기 위한 설계도, 사용자 정의 데이터 타입</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt><strong>객체(Object) / 인스턴스(Instance)</strong></dt>
+      <dd>클래스를 바탕으로 만들어진 메모리 상의 실제 실체 (동일한 의미로 사용됨)</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt><strong>필드(Field)</strong></dt>
+      <dd>클래스 내부에 선언된 변수 (= 멤버 변수). 객체의 상태(데이터)를 저장함</dd>
+    </dl>
+  </li>
+</ul>
+
+<h2 id="배열과-클래스"><span class="me-2">배열과 클래스</span><a href="#배열과-클래스" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>Student[] students = new Student[2]; 형태로 배열 선언</li>
+  <li>객체 배열을 통해 여러 학생 정보를 관리할 수 있음</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nc">Student</span><span class="o">[]</span> <span class="n">students</span> <span class="o">=</span> <span class="o">{</span><span class="n">student1</span><span class="o">,</span> <span class="n">student2</span><span class="o">};</span>
+<span class="k">for</span> <span class="o">(</span><span class="nc">Student</span> <span class="n">s</span> <span class="o">:</span> <span class="n">students</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"이름:"</span> <span class="o">+</span> <span class="n">s</span><span class="o">.</span><span class="na">name</span> <span class="o">+</span> <span class="s">" 나이:"</span> <span class="o">+</span> <span class="n">s</span><span class="o">.</span><span class="na">age</span> <span class="o">+</span> <span class="s">" 성적:"</span> <span class="o">+</span> <span class="n">s</span><span class="o">.</span><span class="na">grade</span><span class="o">);</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -915,6 +1131,12 @@
 
 
 
+
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
 
 
             

@@ -4,7 +4,7 @@
   <id>/</id>
   <title>myNote</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-08-12T19:53:51+09:00</updated>
+  <updated>2025-08-13T16:38:38+09:00</updated>
   <author>
     <name>yun</name>
     <uri>/</uri>
@@ -24,7 +24,7 @@
     <link href="/posts/java-class-summary/" rel="alternate" type="text/html" title="Java 클래스 요약" />
     <published>2025-08-12T15:00:00+09:00</published>
   
-    <updated>2025-08-12T15:19:32+09:00</updated>
+    <updated>2025-08-13T16:38:20+09:00</updated>
   
     <id>/posts/java-class-summary/</id>
     <content type="text/html" src="/posts/java-class-summary/" />
@@ -40,7 +40,7 @@
     
   
 
-  <summary>Java 클래스란?     클래스는 객체의 설계도입니다.   자바에서 모든 것은 클래스에서 시작합니다.   public class Car {     String color;     void drive() {         System.out.println("달립니다!!!");     } }</summary>
+  <summary>📌 클래스와 데이터 문제상황    학생 정보를 다룰 때 이름, 나이, 성적 등 여러 데이터를 저장해야 함   변수로 처리하면: 학생 1명당 3개의 변수 필요 → 학생 늘어나면 코드 폭발   배열로 처리하면: 데이터가 나뉘어 저장됨 → 인덱스 관리 어려움, 실수 위험     해결책: 클래스  public class Student {   String name;   int age;   int grade; }  하나의 객체에 관련 데이터를 묶어서 표현 Student student1 = new Student();  student1.name = "학생"; student1.age = 15; student1.grade = 90;     객체 생성: new 클래스명()   객체 참조: 객체변수.멤버변수   ✅ 자바 클...</summary>
 
   </entry>
 

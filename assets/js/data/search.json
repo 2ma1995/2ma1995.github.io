@@ -6,7 +6,7 @@
     "categories": "Java, Study",
     "tags": "class, OOP, beginner",
     "date": "2025-08-12 15:00:00 +0900",
-    "content": "Java 클래스란?     클래스는 객체의 설계도입니다.   자바에서 모든 것은 클래스에서 시작합니다.   public class Car {     String color;     void drive() {         System.out.println(\"달립니다!!!\");     } }  "
+    "content": "📌 클래스와 데이터 문제상황    학생 정보를 다룰 때 이름, 나이, 성적 등 여러 데이터를 저장해야 함   변수로 처리하면: 학생 1명당 3개의 변수 필요 → 학생 늘어나면 코드 폭발   배열로 처리하면: 데이터가 나뉘어 저장됨 → 인덱스 관리 어려움, 실수 위험     해결책: 클래스  public class Student {   String name;   int age;   int grade; }  하나의 객체에 관련 데이터를 묶어서 표현 Student student1 = new Student();  student1.name = \"학생\"; student1.age = 15; student1.grade = 90;     객체 생성: new 클래스명()   객체 참조: 객체변수.멤버변수   ✅ 자바 클래스 핵심 요약    ✅ 클래스 = 사용자 정의 타입     int, String처럼 직접 만든 데이터 타입이 될 수 있음   클래스를 사용하면 현실 세계의 개념(학생, 자동차 등)을 프로그래밍 세계에 맞게 표현할 수 있음   클래스는 설계도, 객체는 그 설계도로 만들어진 실제 실체 (= 인스턴스)     ✅ 클래스 도입 효과                 방법       단점 또는 문제점                       변수       학생 늘어나면 변수 폭발                 배열       관련 데이터가 배열로 나뉘어 관리 어려움                 클래스       ✅ 관련 데이터를 묶어 구조화, 유지보수 용이             ✅ 용어 정리                 클래스(Class)       객체를 만들기 위한 설계도, 사용자 정의 데이터 타입                       객체(Object) / 인스턴스(Instance)       클래스를 바탕으로 만들어진 메모리 상의 실제 실체 (동일한 의미로 사용됨)                       필드(Field)       클래스 내부에 선언된 변수 (= 멤버 변수). 객체의 상태(데이터)를 저장함           배열과 클래스    Student[] students = new Student[2]; 형태로 배열 선언   객체 배열을 통해 여러 학생 정보를 관리할 수 있음   Student[] students = {student1, student2}; for (Student s : students) {     System.out.println(\"이름:\" + s.name + \" 나이:\" + s.age + \" 성적:\" + s.grade); }  "
   }
   
 ]
