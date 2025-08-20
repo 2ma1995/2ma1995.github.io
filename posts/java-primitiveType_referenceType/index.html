@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Java 클래스 요약" />
+<meta property="og:title" content="Java 기본형 vs 참조형 요약" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="📌 클래스와 데이터 문제상황 학생 정보를 다룰 때 이름, 나이, 성적 등 여러 데이터를 저장해야 함 변수로 처리하면: 학생 1명당 3개의 변수 필요 → 학생 늘어나면 코드 폭발 배열로 처리하면: 데이터가 나뉘어 저장됨 → 인덱스 관리 어려움, 실수 위험" />
-<meta property="og:description" content="📌 클래스와 데이터 문제상황 학생 정보를 다룰 때 이름, 나이, 성적 등 여러 데이터를 저장해야 함 변수로 처리하면: 학생 1명당 3개의 변수 필요 → 학생 늘어나면 코드 폭발 배열로 처리하면: 데이터가 나뉘어 저장됨 → 인덱스 관리 어려움, 실수 위험" />
-<link rel="canonical" href="/posts/java-class-summary/" />
-<meta property="og:url" content="/posts/java-class-summary/" />
+<meta name="description" content="✅ Java 데이터 타입 분류" />
+<meta property="og:description" content="✅ Java 데이터 타입 분류" />
+<link rel="canonical" href="/posts/java-primitiveType_referenceType/" />
+<meta property="og:url" content="/posts/java-primitiveType_referenceType/" />
 <meta property="og:site_name" content="myNote" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-08-12T15:00:00+09:00" />
+<meta property="article:published_time" content="2025-08-20T15:30:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Java 클래스 요약" />
+<meta property="twitter:title" content="Java 기본형 vs 참조형 요약" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-13T16:54:35+09:00","datePublished":"2025-08-12T15:00:00+09:00","description":"📌 클래스와 데이터 문제상황 학생 정보를 다룰 때 이름, 나이, 성적 등 여러 데이터를 저장해야 함 변수로 처리하면: 학생 1명당 3개의 변수 필요 → 학생 늘어나면 코드 폭발 배열로 처리하면: 데이터가 나뉘어 저장됨 → 인덱스 관리 어려움, 실수 위험","headline":"Java 클래스 요약","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/java-class-summary/"},"url":"/posts/java-class-summary/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-20T15:30:00+09:00","datePublished":"2025-08-20T15:30:00+09:00","description":"✅ Java 데이터 타입 분류","headline":"Java 기본형 vs 참조형 요약","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/java-primitiveType_referenceType/"},"url":"/posts/java-primitiveType_referenceType/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Java 클래스 요약 | myNote
+  <title>Java 기본형 vs 참조형 요약 | myNote
   </title>
 
   <!--
@@ -440,7 +440,7 @@
         
           
             
-              <span>Java 클래스 요약</span>
+              <span>Java 기본형 vs 참조형 요약</span>
             
 
           
@@ -585,6 +585,105 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -600,6 +699,17 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
       
 
       
@@ -641,7 +751,7 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>Java 클래스 요약</h1>
+    <h1 data-toc-skip>Java 기본형 vs 참조형 요약</h1>
     
 
     <div class="post-meta text-muted">
@@ -658,41 +768,18 @@
 
 <time
   
-  data-ts="1754978400"
+  data-ts="1755671400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Aug 12, 2025
+  Aug 20, 2025
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1755071675"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Aug 13, 2025
-</time>
-
-        </span>
       
 
       
@@ -736,9 +823,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="607 words"
+  title="1326 words"
 >
-  <em>3 min</em> read</span>
+  <em>7 min</em> read</span>
 
         </div>
       </div>
@@ -747,7 +834,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">Java 클래스 요약</span>
+      <span class="label text-truncate">Java 기본형 vs 참조형 요약</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -760,7 +847,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">Java 클래스 요약</div>
+        <div class="label text-truncate py-2 ms-4">Java 기본형 vs 참조형 요약</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -770,19 +857,178 @@
   
 
   <div class="content">
-    <h1 id="-클래스와-데이터">📌 클래스와 데이터</h1>
-<h3 id="문제상황"><span class="me-2">문제상황</span><a href="#문제상황" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <h1 id="-java-데이터-타입-분류">✅ Java 데이터 타입 분류</h1>
+
+<p>자바의 데이터 타입은 크게 두 가지로 나뉜다:</p>
+
+<ol>
+  <li><strong>기본형 (Primitive Type)</strong></li>
+  <li><strong>참조형 (Reference Type)</strong></li>
+</ol>
+
+<hr />
+
+<h2 id="-기본형-primitive-type"><span class="me-2">🧱 기본형 (Primitive Type)</span><a href="#-기본형-primitive-type" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <ul>
-  <li>학생 정보를 다룰 때 이름, 나이, 성적 등 여러 데이터를 저장해야 함</li>
-  <li>변수로 처리하면: 학생 1명당 3개의 변수 필요 → 학생 늘어나면 코드 폭발</li>
-  <li>배열로 처리하면: 데이터가 나뉘어 저장됨 → 인덱스 관리 어려움, 실수 위험</li>
+  <li>데이터를 직접 <strong>값</strong>으로 저장한다.</li>
+  <li>총 8가지 타입이 존재한다.</li>
+  <li>메모리(stack)에 실제 값을 저장함.</li>
 </ul>
 
-<blockquote>
-  <p>💡 <code class="language-plaintext highlighter-rouge">클래스</code>를 사용하면 관련 데이터를 묶어서 구조화할 수 있어 유지보수에 유리합니다.</p>
-</blockquote>
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>타입</th>
+      <th>크기</th>
+      <th>예시 값</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">byte</code></td>
+      <td>1B</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">short</code></td>
+      <td>2B</td>
+      <td>32000</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">int</code></td>
+      <td>4B</td>
+      <td>123</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">long</code></td>
+      <td>8B</td>
+      <td>123456789L</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">float</code></td>
+      <td>4B</td>
+      <td>3.14f</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">double</code></td>
+      <td>8B</td>
+      <td>3.14159</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">char</code></td>
+      <td>2B</td>
+      <td>‘A’</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">boolean</code></td>
+      <td>1B</td>
+      <td>true / false</td>
+    </tr>
+  </tbody>
+</table></div>
 
-<h2 id="해결책-클래스"><span class="me-2">해결책: 클래스</span><a href="#해결책-클래스" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+<span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="sc">'A'</span><span class="o">;</span>
+<span class="kt">boolean</span> <span class="n">isAdult</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></div></div>
+<ul>
+  <li>
+    <h2 id="위처럼-변수에-사용할-값을-직접-넣을-수-있는-데이터-타입을-기본형이라-한다"><span class="me-2">위처럼 변수에 사용할 값을 직접 넣을 수 있는 데이터 타입을 기본형이라 한다.</span><a href="#위처럼-변수에-사용할-값을-직접-넣을-수-있는-데이터-타입을-기본형이라-한다" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  </li>
+</ul>
+
+<h2 id="-참조형-reference-type"><span class="me-2">🔗 참조형 (Reference Type)</span><a href="#-참조형-reference-type" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ul>
+  <li><strong>객체(Object)의 주소값</strong>을 저장한다.</li>
+  <li>클래스, 배열, 인터페이스 등 대부분의 사용자 정의 데이터.</li>
+  <li>heap에 객체 데이터를 만들고, 그 주소를 stack에 저장.</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Alice"</span><span class="o">;</span>           <span class="c1">// String 객체의 주소 저장</span>
+<span class="kt">int</span><span class="o">[]</span> <span class="n">scores</span> <span class="o">=</span> <span class="o">{</span><span class="mi">90</span><span class="o">,</span> <span class="mi">80</span><span class="o">,</span> <span class="mi">100</span><span class="o">};</span>    <span class="c1">// 배열도 참조형</span>
+<span class="nc">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Student</span><span class="o">();</span> <span class="c1">// 클래스도 참조형</span>
+</pre></td></tr></tbody></table></code></div></div>
+<ul>
+  <li>
+    <h2 id="위처럼-데이터에-접근하기-위한-참조주소를-저장하는-데이터-타입을-참조형이라고-한다-참조형은-객체-또는-배열에-사용한다"><span class="me-2">위처럼 데이터에 접근하기 위한 참조(주소)를 저장하는 데이터 타입을 참조형이라고 한다. 참조형은 객체 또는 배열에 사용한다.</span><a href="#위처럼-데이터에-접근하기-위한-참조주소를-저장하는-데이터-타입을-참조형이라고-한다-참조형은-객체-또는-배열에-사용한다" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  </li>
+</ul>
+
+<h2 id="-주요-차이"><span class="me-2">🧠 주요 차이</span><a href="#-주요-차이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>비교 항목</th>
+      <th>기본형 (Primitive)</th>
+      <th>참조형 (Reference)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>저장 내용</td>
+      <td>실제 값 (value)</td>
+      <td>객체 주소 (reference)</td>
+    </tr>
+    <tr>
+      <td>메모리 위치</td>
+      <td>Stack</td>
+      <td>객체는 Heap, 참조는 Stack</td>
+    </tr>
+    <tr>
+      <td>null 저장</td>
+      <td>❌ 불가능</td>
+      <td>✅ 가능 (<code class="language-plaintext highlighter-rouge">null</code>로 초기화 가능)</td>
+    </tr>
+    <tr>
+      <td>예시</td>
+      <td><code class="language-plaintext highlighter-rouge">int</code>, <code class="language-plaintext highlighter-rouge">double</code>, <code class="language-plaintext highlighter-rouge">boolean</code></td>
+      <td><code class="language-plaintext highlighter-rouge">String</code>, 배열, 사용자 클래스</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<hr />
+
+<h2 id="기본형-vs-참조형---기본"><span class="me-2">기본형 vs 참조형 - 기본</span><a href="#기본형-vs-참조형---기본" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>기본형은 숫자 10, 20과 같이 실제 사용하는 값을 변수에 담을 수 있다.(해당값 바로 사용할수 있음)</li>
+  <li>참조형은 실제 사용하는 값을 변수에 담는 것이 아님, 이름 그대로 실제 객체의 위치(참조,주소)를 저장한다. 참조형에는 객체와 배열이 있음
+    <ul>
+      <li>객체는 .(dot)을 통해서 메모리 상에 생성된 객체를 찾아가 사용</li>
+      <li>배열은 []를 통해서 메모리 상에 생성된 객체를 찾아가 사용</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="기본형-vs-참조형---계산"><span class="me-2">기본형 vs 참조형 - 계산</span><a href="#기본형-vs-참조형---계산" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>기본형은 들어있는 값을 그대로 계산에 사용
+    <ul>
+      <li>ex) 더하고 빼고, 사용하고 등(숫자 같은 것들은 바로 계산)</li>
+    </ul>
+  </li>
+  <li>참조형은 들어있는 참조값을 그대로 사용할 수 없다. 주소지만 가지고 할 수 있는게 없음, 주소지에 가야 사용가능
+    <ul>
+      <li>ex) 더하고 빼고 사용하고 못함, 참조값만 가지고는 계산불가.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h2 id="-예제-비교"><span class="me-2">📌 예제 비교</span><a href="#-예제-비교" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
@@ -791,110 +1037,199 @@
 3
 4
 5
-</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Student</span> <span class="o">{</span>
-  <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
-  <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
-  <span class="kt">int</span> <span class="n">grade</span><span class="o">;</span>
-<span class="o">}</span>
+</pre></td><td class="rouge-code"><pre><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">;</span>       <span class="c1">// 값 복사</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">y</span><span class="o">);</span>  <span class="c1">// 10 (영향 X)</span>
 </pre></td></tr></tbody></table></code></div></div>
-<p>하나의 객체에 관련 데이터를 묶어서 표현</p>
+
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
-</pre></td><td class="rouge-code"><pre><span class="nc">Student</span> <span class="n">student1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Student</span><span class="o">();</span> <span class="c1">// Student 클래스 기반 객체 생성</span>
-<span class="n">student1</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">"학생"</span><span class="o">;</span>            <span class="c1">// 객체의 필드에 값 할당</span>
-<span class="n">student1</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="mi">15</span><span class="o">;</span>
-<span class="n">student1</span><span class="o">.</span><span class="na">grade</span> <span class="o">=</span> <span class="mi">90</span><span class="o">;</span>
+5
+</pre></td><td class="rouge-code"><pre><span class="kt">int</span><span class="o">[]</span> <span class="n">arr1</span> <span class="o">=</span> <span class="o">{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">};</span>
+<span class="kt">int</span><span class="o">[]</span> <span class="n">arr2</span> <span class="o">=</span> <span class="n">arr1</span><span class="o">;</span>   <span class="c1">// 주소 복사</span>
+
+<span class="n">arr1</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">99</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">arr2</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span> <span class="c1">// 99 (같은 객체를 가리킴)</span>
 </pre></td></tr></tbody></table></code></div></div>
-<ul>
-  <li>객체 생성: new 클래스명()</li>
-  <li>객체 참조: 객체변수.멤버변수</li>
-</ul>
 
-<h1 id="-자바-클래스-핵심-요약">✅ 자바 클래스 핵심 요약</h1>
+<blockquote>
+  <p>👉 <strong>기본형은 값을 복사</strong>, 참조형은 <strong>주소를 공유</strong>한다는 점이 핵심!</p>
+</blockquote>
 
 <hr />
 
-<h2 id="-클래스--사용자-정의-타입"><span class="me-2">✅ 클래스 = 사용자 정의 타입</span><a href="#-클래스--사용자-정의-타입" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h1 id="-기본형-vs-참조형-메서드-호출">🧠 기본형 vs 참조형: 메서드 호출</h1>
 
+<p>자바는 항상 <strong>변수의 값을 복사</strong>해서 대입한다. 이 원칙은 <strong>메서드 호출</strong> 시에도 동일하게 적용된다.</p>
+
+<hr />
+
+<h2 id="-기본형-값만-복사"><span class="me-2">✅ 기본형: 값만 복사</span><a href="#-기본형-값만-복사" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MethodChange1</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"메서드 호출 전: a = "</span> <span class="o">+</span> <span class="n">a</span><span class="o">);</span>
+    <span class="n">changePrimitive</span><span class="o">(</span><span class="n">a</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"메서드 호출 후: a = "</span> <span class="o">+</span> <span class="n">a</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">static</span> <span class="kt">void</span> <span class="nf">changePrimitive</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><strong>실행 결과</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>메서드 호출 전: a = 10
+메서드 호출 후: a = 10
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="설명"><span class="me-2">설명</span><a href="#설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">int</code>, <code class="language-plaintext highlighter-rouge">String</code>처럼 직접 만든 <strong>데이터 타입</strong>이 될 수 있음</li>
-  <li>클래스를 사용하면 현실 세계의 개념(학생, 자동차 등)을 프로그래밍 세계에 맞게 표현할 수 있음</li>
-  <li><strong>클래스는 설계도</strong>, 객체는 그 설계도로 만들어진 <strong>실제 실체 (= 인스턴스)</strong></li>
+  <li><code class="language-plaintext highlighter-rouge">a</code>의 값이 <code class="language-plaintext highlighter-rouge">x</code>에 복사됨 → 두 변수는 별개</li>
+  <li><code class="language-plaintext highlighter-rouge">x = 20</code>은 <code class="language-plaintext highlighter-rouge">a</code>에 영향을 주지 않음</li>
 </ul>
 
 <hr />
 
-<h2 id="-클래스-도입-효과"><span class="me-2">✅ 클래스 도입 효과</span><a href="#-클래스-도입-효과" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="-참조형-참조값이-복사됨"><span class="me-2">✅ 참조형: 참조값이 복사됨</span><a href="#-참조형-참조값이-복사됨" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MethodChange2</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Data</span> <span class="n">dataA</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Data</span><span class="o">();</span>
+    <span class="n">dataA</span><span class="o">.</span><span class="na">value</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"메서드 호출 전: dataA.value = "</span> <span class="o">+</span> <span class="n">dataA</span><span class="o">.</span><span class="na">value</span><span class="o">);</span>
+    <span class="n">changeReference</span><span class="o">(</span><span class="n">dataA</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"메서드 호출 후: dataA.value = "</span> <span class="o">+</span> <span class="n">dataA</span><span class="o">.</span><span class="na">value</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">static</span> <span class="kt">void</span> <span class="nf">changeReference</span><span class="o">(</span><span class="nc">Data</span> <span class="n">dataX</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">dataX</span><span class="o">.</span><span class="na">value</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><strong>실행 결과</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>메서드 호출 전: dataA.value = 10
+메서드 호출 후: dataA.value = 20
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="설명-1"><span class="me-2">설명</span><a href="#설명-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">dataA</code>의 참조값이 <code class="language-plaintext highlighter-rouge">dataX</code>에 복사됨 → 두 변수는 같은 객체를 가리킴</li>
+  <li><code class="language-plaintext highlighter-rouge">dataX.value = 20</code>은 <code class="language-plaintext highlighter-rouge">dataA.value</code>에도 영향</li>
+</ul>
+
+<hr />
+
+<h2 id="-정리"><span class="me-2">✅ 정리</span><a href="#-정리" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th>방법</th>
-      <th>단점 또는 문제점</th>
+      <th>구분</th>
+      <th>전달 방식</th>
+      <th>메서드 내부 변경 시 호출자에 영향</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>변수</td>
-      <td>학생 늘어나면 변수 폭발</td>
+      <td>기본형</td>
+      <td>값 복사</td>
+      <td>❌ 없음</td>
     </tr>
     <tr>
-      <td>배열</td>
-      <td>관련 데이터가 배열로 나뉘어 관리 어려움</td>
-    </tr>
-    <tr>
-      <td>클래스</td>
-      <td>✅ 관련 데이터를 묶어 구조화, 유지보수 용이</td>
+      <td>참조형</td>
+      <td>참조값 복사</td>
+      <td>✅ 있음</td>
     </tr>
   </tbody>
 </table></div>
 
+<ul>
+  <li>자바의 매개변수 전달은 <strong>항상 값에 의한 전달(Call by Value)</strong>.</li>
+  <li><strong>기본형</strong>은 실제 값을, <strong>참조형</strong>은 주소(참조값)를 복사.</li>
+</ul>
+
 <hr />
 
-<h2 id="-용어-정리"><span class="me-2">✅ 용어 정리</span><a href="#-용어-정리" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="-핵심-요약"><span class="me-2">✅ 핵심 요약</span><a href="#-핵심-요약" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <ul>
-  <li>
-    <dl>
-      <dt><strong>클래스(Class)</strong></dt>
-      <dd>객체를 만들기 위한 설계도, 사용자 정의 데이터 타입</dd>
-    </dl>
-  </li>
-  <li>
-    <dl>
-      <dt><strong>객체(Object) / 인스턴스(Instance)</strong></dt>
-      <dd>클래스를 바탕으로 만들어진 메모리 상의 실제 실체 (동일한 의미로 사용됨)</dd>
-    </dl>
-  </li>
-  <li>
-    <dl>
-      <dt><strong>필드(Field)</strong></dt>
-      <dd>클래스 내부에 선언된 변수 (= 멤버 변수). 객체의 상태(데이터)를 저장함</dd>
-    </dl>
-  </li>
+  <li>변수에 대입 = 값 복사</li>
+  <li>메서드 호출 = 매개변수도 값 복사</li>
+  <li>참조형의 경우 복사된 값이 <strong>참조값</strong>이라 객체 내용은 변경 가능</li>
 </ul>
 
-<h2 id="배열과-클래스"><span class="me-2">배열과 클래스</span><a href="#배열과-클래스" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<ul>
-  <li>Student[] students = new Student[2]; 형태로 배열 선언</li>
-  <li>객체 배열을 통해 여러 학생 정보를 관리할 수 있음</li>
-</ul>
+<hr />
+
+<h2 id="-null-주의"><span class="me-2">🧪 null 주의</span><a href="#-null-주의" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3
-4
-</pre></td><td class="rouge-code"><pre><span class="nc">Student</span><span class="o">[]</span> <span class="n">students</span> <span class="o">=</span> <span class="o">{</span><span class="n">student1</span><span class="o">,</span> <span class="n">student2</span><span class="o">};</span>
-<span class="k">for</span> <span class="o">(</span><span class="nc">Student</span> <span class="n">s</span> <span class="o">:</span> <span class="n">students</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"이름:"</span> <span class="o">+</span> <span class="n">s</span><span class="o">.</span><span class="na">name</span> <span class="o">+</span> <span class="s">" 나이:"</span> <span class="o">+</span> <span class="n">s</span><span class="o">.</span><span class="na">age</span> <span class="o">+</span> <span class="s">" 성적:"</span> <span class="o">+</span> <span class="n">s</span><span class="o">.</span><span class="na">grade</span><span class="o">);</span>
-<span class="o">}</span>
+</pre></td><td class="rouge-code"><pre><span class="nc">Student</span> <span class="n">s</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">.</span><span class="na">name</span><span class="o">);</span> <span class="c1">// ❌ NullPointerException</span>
 </pre></td></tr></tbody></table></code></div></div>
+
+<hr />
+
+<h2 id="-요약"><span class="me-2">✅ 요약</span><a href="#-요약" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ul>
+  <li><strong>기본형</strong>: 숫자, 문자, 논리 등 값 자체를 다룸</li>
+  <li><strong>참조형</strong>: 객체나 배열 등 실제 데이터 위치를 가리킴</li>
+  <li>참조형은 <strong>null</strong>, <strong>공유</strong>, <strong>heap</strong> 등을 항상 염두에 둘 것</li>
+</ul>
+
+<hr />
 
   </div>
 
@@ -915,19 +1250,19 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/class/"
+            href="/tags/primitive/"
             class="post-tag no-text-decoration"
-          >class</a>
+          >primitive</a>
         
           <a
-            href="/tags/oop/"
+            href="/tags/reference/"
             class="post-tag no-text-decoration"
-          >OOP</a>
+          >reference</a>
         
           <a
-            href="/tags/beginner/"
+            href="/tags/datatype/"
             class="post-tag no-text-decoration"
-          >beginner</a>
+          >datatype</a>
         
       </div>
     
@@ -963,21 +1298,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Java%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%9A%94%EC%95%BD%20-%20myNote&url=%2Fposts%2Fjava-class-summary%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Java%20%EA%B8%B0%EB%B3%B8%ED%98%95%20vs%20%EC%B0%B8%EC%A1%B0%ED%98%95%20%EC%9A%94%EC%95%BD%20-%20myNote&url=%2Fposts%2Fjava-primitiveType_referenceType%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Java%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%9A%94%EC%95%BD%20-%20myNote&u=%2Fposts%2Fjava-class-summary%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Java%20%EA%B8%B0%EB%B3%B8%ED%98%95%20vs%20%EC%B0%B8%EC%A1%B0%ED%98%95%20%EC%9A%94%EC%95%BD%20-%20myNote&u=%2Fposts%2Fjava-primitiveType_referenceType%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=%2Fposts%2Fjava-class-summary%2F&text=Java%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%9A%94%EC%95%BD%20-%20myNote" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=%2Fposts%2Fjava-primitiveType_referenceType%2F&text=Java%20%EA%B8%B0%EB%B3%B8%ED%98%95%20vs%20%EC%B0%B8%EC%A1%B0%ED%98%95%20%EC%9A%94%EC%95%BD%20-%20myNote" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1304,19 +1639,19 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -1332,7 +1667,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/java-primitiveType_referenceType/" class="post-preview card h-100">
+          <a href="/posts/java-class-summary/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1344,16 +1679,16 @@
 
 <time
   
-  data-ts="1755671400"
+  data-ts="1754978400"
   data-df="ll"
   
 >
-  Aug 20, 2025
+  Aug 12, 2025
 </time>
 
-              <h4 class="pt-0 my-2">Java 기본형 vs 참조형 요약</h4>
+              <h4 class="pt-0 my-2">Java 클래스 요약</h4>
               <div class="text-muted">
-                <p># ✅ Java 데이터 타입 분류  자바의 데이터 타입은 크게 두 가지로 나뉜다:  1. **기본형 (Primitive Type)** 2. **참조형 (Reference Type)**  ---  ## 🧱 기본형 (Primitive Type)  - 데이터를 직접 **값**으로 저장한다. - 총 8가지 타입이 존재한다. - 메모리(stack)에 실제 값을...</p>
+                <p>📌 클래스와 데이터 문제상황    학생 정보를 다룰 때 이름, 나이, 성적 등 여러 데이터를 저장해야 함   변수로 처리하면: 학생 1명당 3개의 변수 필요 → 학생 늘어나면 코드 폭발   배열로 처리하면: 데이터가 나뉘어 저장됨 → 인덱스 관리 어려움, 실수 위험      💡 클래스를 사용하면 관련 데이터를 묶어서 구조화할 수 있어 유지보수에 유리합...</p>
               </div>
             </div>
           </a>
@@ -1373,19 +1708,19 @@
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Older">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/java-class-summary/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Java 클래스 요약</p>
+    </a>
   
 
   
-    <a
-      href="/posts/java-primitiveType_referenceType/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Java 기본형 vs 참조형 요약</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 

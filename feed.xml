@@ -4,7 +4,7 @@
   <id>/</id>
   <title>myNote</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-08-20T15:08:36+09:00</updated>
+  <updated>2025-08-20T15:41:55+09:00</updated>
   <author>
     <name>yun</name>
     <uri>/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Java 기본형 vs 참조형 요약</title>
+    <link href="/posts/java-primitiveType_referenceType/" rel="alternate" type="text/html" title="Java 기본형 vs 참조형 요약" />
+    <published>2025-08-20T15:30:00+09:00</published>
+  
+    <updated>2025-08-20T15:30:00+09:00</updated>
+  
+    <id>/posts/java-primitiveType_referenceType/</id>
+    <content type="text/html" src="/posts/java-primitiveType_referenceType/" />
+    <author>
+      <name>yun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Study" />
+    
+  
+
+  <summary>✅ Java 데이터 타입 분류  자바의 데이터 타입은 크게 두 가지로 나뉜다:     기본형 (Primitive Type)   참조형 (Reference Type)     🧱 기본형 (Primitive Type)     데이터를 직접 값으로 저장한다.   총 8가지 타입이 존재한다.   메모리(stack)에 실제 값을 저장함.                  타입       크기       예시 값                       byte       1B       100                 short       2B       32000                 int       4B       123                 long       8B       123456789...</summary>
+
+  </entry>
 
   
   <entry>
