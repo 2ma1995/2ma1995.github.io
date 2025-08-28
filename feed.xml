@@ -4,7 +4,7 @@
   <id>/</id>
   <title>myNote</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-08-20T15:41:55+09:00</updated>
+  <updated>2025-08-28T17:49:24+09:00</updated>
   <author>
     <name>yun</name>
     <uri>/</uri>
@@ -20,11 +20,37 @@
 
   
   <entry>
+    <title>객체 지향 프로그래밍</title>
+    <link href="/posts/java-Object-Oriented-Programming/" rel="alternate" type="text/html" title="객체 지향 프로그래밍" />
+    <published>2025-08-28T17:44:00+09:00</published>
+  
+    <updated>2025-08-28T17:44:00+09:00</updated>
+  
+    <id>/posts/java-Object-Oriented-Programming/</id>
+    <content type="text/html" src="/posts/java-Object-Oriented-Programming/" />
+    <author>
+      <name>yun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Study" />
+    
+  
+
+  <summary>✅ 절차 지향 프로그래밍 vs 객체지향 프로그래밍     절차 지향 프로그래밍            절차 지향 프로그래밍은 이름 그대로 절차를 지향, 실행순서를 중요하게 생각하는 방식       절차 지향 프로그래밍은 프로그램의 흐름을 순차적으로 따르며 처리, “어떻게”를 중심으로 프로그래밍 한다.           객체 지향 프로그래밍            객체 지향 프로그래밍은 이름 그대로 객체를 지향, 객체를 중요하게 생각하는 방식       객체 지향 프로그래밍은 실제 세계의 사물이나 사건을 객체로 보고, 객체들간의 상호작용을 중심으로 프로그래밍 하는 방식. “무엇을” 중심으로 프로그래밍           둘의 중요한차이            절차지향은 데이터와 해당 데이터에 대한 ㅊ리 방식이 분리 ...</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>Java 기본형 vs 참조형 요약</title>
     <link href="/posts/java-primitiveType_referenceType/" rel="alternate" type="text/html" title="Java 기본형 vs 참조형 요약" />
     <published>2025-08-20T15:30:00+09:00</published>
   
-    <updated>2025-08-20T15:30:00+09:00</updated>
+    <updated>2025-08-28T17:49:14+09:00</updated>
   
     <id>/posts/java-primitiveType_referenceType/</id>
     <content type="text/html" src="/posts/java-primitiveType_referenceType/" />
@@ -50,7 +76,7 @@
     <link href="/posts/java-class-summary/" rel="alternate" type="text/html" title="Java 클래스 요약" />
     <published>2025-08-12T15:00:00+09:00</published>
   
-    <updated>2025-08-13T16:54:35+09:00</updated>
+    <updated>2025-08-28T17:49:14+09:00</updated>
   
     <id>/posts/java-class-summary/</id>
     <content type="text/html" src="/posts/java-class-summary/" />
