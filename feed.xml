@@ -4,7 +4,7 @@
   <id>/</id>
   <title>myNote</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-08-28T18:52:01+09:00</updated>
+  <updated>2025-09-03T21:50:19+09:00</updated>
   <author>
     <name>yun</name>
     <uri>/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>접근 제어자</title>
+    <link href="/posts/java-access_modifier/" rel="alternate" type="text/html" title="접근 제어자" />
+    <published>2025-09-03T20:32:00+09:00</published>
+  
+    <updated>2025-09-03T20:32:00+09:00</updated>
+  
+    <id>/posts/java-access_modifier/</id>
+    <content type="text/html" src="/posts/java-access_modifier/" />
+    <author>
+      <name>yun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Study" />
+    
+  
+
+  <summary>✅ 접근 제어자 이해  접근제어자란? - 해당 클래스 외부에서 특정 필드나 메서드에 접근하는 것을 허용하거나 제한할수있는것.  에어컨 예제)    에어컨은 최고온도나 최저온도를 넘을수 없다.(넘어가면 에어컨이 고장난다.)   아래는 에어컨의 객체다. ```java package access;   public class AirConditioner {     int temperature;  // 생성자 public AirConditioner(int temperature) {     this.temperature = temperature; }  // 온도 올리기 public void increaseTemp() {     if (temperature &amp;gt;= 30) {         System.out.pr...</summary>
+
+  </entry>
 
   
   <entry>
