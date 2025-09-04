@@ -43,7 +43,7 @@
 <meta property="twitter:title" content="접근 제어자" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-09-04T15:40:30+09:00","datePublished":"2025-09-03T20:32:00+09:00","description":"✅ 접근 제어자 이해","headline":"접근 제어자","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/java-access_modifier/"},"url":"/posts/java-access_modifier/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-09-04T15:44:34+09:00","datePublished":"2025-09-03T20:32:00+09:00","description":"✅ 접근 제어자 이해","headline":"접근 제어자","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/java-access_modifier/"},"url":"/posts/java-access_modifier/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -574,6 +574,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -589,6 +600,17 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
       
 
       
@@ -813,7 +835,7 @@
 
 <time
   
-  data-ts="1756968030"
+  data-ts="1756968274"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -866,7 +888,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="2119 words"
+  title="2117 words"
 >
   <em>11 min</em> read</span>
 
@@ -1340,23 +1362,53 @@ private -&gt; default -&gt; protected -&gt; public</p>
 <ul>
   <li>클래스에는 public, default만 사용 가능</li>
   <li>public 클래스는 파일명과 동일해야 함</li>
-  <li>하나의 자바 파일에 public 클래스는 1개만 가능, default 클래스는 여러 개 가능
-```java
-package access.a;</li>
+  <li>하나의 자바 파일에 public 클래스는 1개만 가능, default 클래스는 여러 개 가능</li>
 </ul>
 
-<p>public class PublicClass {
-public static void main(String[] args) {
-PublicClass pub = new PublicClass();
-DefaultClass1 d1 = new DefaultClass1();
-DefaultClass2 d2 = new DefaultClass2();
-}
-}</p>
+<hr />
 
-<p>class DefaultClass1 {}
-class DefaultClass2 {}</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="kn">package</span> <span class="nn">access.a</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">PublicClass</span> <span class="o">{</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="nc">PublicClass</span> <span class="n">pub</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">PublicClass</span><span class="o">();</span>
+<span class="nc">DefaultClass1</span> <span class="n">d1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DefaultClass1</span><span class="o">();</span>
+<span class="nc">DefaultClass2</span> <span class="n">d2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DefaultClass2</span><span class="o">();</span>
+<span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">DefaultClass1</span> <span class="o">{}</span>
+<span class="kd">class</span> <span class="nc">DefaultClass2</span> <span class="o">{}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<hr />
+
+<h2 id="4-캡슐화encapsulation-개념"><span class="me-2">4. 캡슐화(Encapsulation) 개념</span><a href="#4-캡슐화encapsulation-개념" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>데이터(필드)와 기능(메서드)을 하나로 묶고, 불필요한 것은 숨기고 필요한 것만 노출하는 것</li>
+  <li>데이터는 반드시 숨기고(private), 외부에서는 제공된 메서드를 통해서만 접근해야 함</li>
+</ul>
+
+<hr />
+
+<h3 id="-bankaccount-예제-캡슐화-적용"><span class="me-2">✅ BankAccount 예제 (캡슐화 적용)</span><a href="#-bankaccount-예제-캡슐화-적용" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -1396,60 +1448,47 @@ class DefaultClass2 {}</p>
 37
 38
 39
-40
-41
-42
-43
-44
-45
-46
-</pre></td><td class="rouge-code"><pre>---
-## 4. 캡슐화(Encapsulation) 개념
-- 데이터(필드)와 기능(메서드)을 하나로 묶고, 불필요한 것은 숨기고 필요한 것만 노출하는 것
-- 데이터는 반드시 숨기고(private), 외부에서는 제공된 메서드를 통해서만 접근해야 함
+</pre></td><td class="rouge-code"><pre><span class="kn">package</span> <span class="nn">access</span><span class="o">;</span>
 
-### ✅ BankAccount 예제 (캡슐화 적용)
-```java
-package access;
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">BankAccount</span> <span class="o">{</span>
+<span class="kd">private</span> <span class="kt">int</span> <span class="n">balance</span><span class="o">;</span> <span class="c1">// 데이터를 직접 접근 못 하게 보호</span>
 
-public class BankAccount {
-private int balance; // 데이터를 직접 접근 못 하게 보호
+    <span class="kd">public</span> <span class="nf">BankAccount</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">balance</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="o">}</span>
 
-    public BankAccount() {
-        balance = 0;
-    }
+    <span class="c1">// 입금 (public)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">deposit</span><span class="o">(</span><span class="kt">int</span> <span class="n">amount</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">isAmountValid</span><span class="o">(</span><span class="n">amount</span><span class="o">))</span> <span class="o">{</span>
+            <span class="n">balance</span> <span class="o">+=</span> <span class="n">amount</span><span class="o">;</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">amount</span> <span class="o">+</span> <span class="s">"원 입금 완료"</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"유효하지 않은 금액입니다."</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
 
-    // 입금 (public)
-    public void deposit(int amount) {
-        if (isAmountValid(amount)) {
-            balance += amount;
-            System.out.println(amount + "원 입금 완료");
-        } else {
-            System.out.println("유효하지 않은 금액입니다.");
-        }
-    }
+    <span class="c1">// 출금 (public)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">withdraw</span><span class="o">(</span><span class="kt">int</span> <span class="n">amount</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">isAmountValid</span><span class="o">(</span><span class="n">amount</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="n">balance</span> <span class="o">-</span> <span class="n">amount</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">balance</span> <span class="o">-=</span> <span class="n">amount</span><span class="o">;</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">amount</span> <span class="o">+</span> <span class="s">"원 출금 완료"</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"유효하지 않은 금액이거나 잔액 부족"</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
 
-    // 출금 (public)
-    public void withdraw(int amount) {
-        if (isAmountValid(amount) &amp;&amp; balance - amount &gt;= 0) {
-            balance -= amount;
-            System.out.println(amount + "원 출금 완료");
-        } else {
-            System.out.println("유효하지 않은 금액이거나 잔액 부족");
-        }
-    }
+    <span class="c1">// 잔고 조회 (public)</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getBalance</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">balance</span><span class="o">;</span>
+    <span class="o">}</span>
 
-    // 잔고 조회 (public)
-    public int getBalance() {
-        return balance;
-    }
-
-    // 금액 검증 (private → 내부에서만 사용)
-    private boolean isAmountValid(int amount) {
-        return amount &gt; 0;
-    }
-}
+    <span class="c1">// 금액 검증 (private → 내부에서만 사용)</span>
+    <span class="kd">private</span> <span class="kt">boolean</span> <span class="nf">isAmountValid</span><span class="o">(</span><span class="kt">int</span> <span class="n">amount</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">amount</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
+
 <h4 id="bankaccountmain"><span class="me-2">BankAccountMain</span><a href="#bankaccountmain" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
