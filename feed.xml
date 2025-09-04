@@ -4,7 +4,7 @@
   <id>/</id>
   <title>myNote</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-09-04T15:27:26+09:00</updated>
+  <updated>2025-09-04T15:40:35+09:00</updated>
   <author>
     <name>yun</name>
     <uri>/</uri>
@@ -24,7 +24,7 @@
     <link href="/posts/java-access_modifier/" rel="alternate" type="text/html" title="접근 제어자" />
     <published>2025-09-03T20:32:00+09:00</published>
   
-    <updated>2025-09-03T20:32:00+09:00</updated>
+    <updated>2025-09-04T15:40:30+09:00</updated>
   
     <id>/posts/java-access_modifier/</id>
     <content type="text/html" src="/posts/java-access_modifier/" />

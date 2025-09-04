@@ -43,7 +43,7 @@
 <meta property="twitter:title" content="접근 제어자" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-09-03T20:32:00+09:00","datePublished":"2025-09-03T20:32:00+09:00","description":"✅ 접근 제어자 이해","headline":"접근 제어자","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/java-access_modifier/"},"url":"/posts/java-access_modifier/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-09-04T15:40:30+09:00","datePublished":"2025-09-03T20:32:00+09:00","description":"✅ 접근 제어자 이해","headline":"접근 제어자","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/java-access_modifier/"},"url":"/posts/java-access_modifier/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -563,65 +563,6 @@
 
       
     
-
-    
-  
-
-  
-  
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
       
 
       
@@ -681,6 +622,50 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -688,6 +673,86 @@
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
 
@@ -736,6 +801,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1756968030"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Sep  4, 2025
+</time>
+
+        </span>
+      
 
       
 
@@ -778,9 +866,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="2160 words"
+  title="2119 words"
 >
-  <em>12 min</em> read</span>
+  <em>11 min</em> read</span>
 
         </div>
       </div>
@@ -977,24 +1065,19 @@
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 <p>위의 코드가 실행이된다. 이렇게, AirConditioner객체를 사용하는 사용자는 AirConditioner의 temperature필드와 메서드에 모두 접근가능하다.
-이런 상황에서 필드의 외부접근을 막을수 있는 방법이 필요하다.
-—</p>
+이런 상황에서 필드의 외부접근을 막을수 있는 방법이 필요하다.</p>
+
+<hr />
+
 <h4 id="해결방법"><span class="me-2">해결방법</span><a href="#해결방법" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <ul>
-  <li>
-    <h2 id="이-문제를-근본적으로-해결하는-방법은-temperature-필드를-airconditioner-클래스-외부에서는-접근하지-못하게-막는-것"><span class="me-2">이 문제를 근본적으로 해결하는 방법은 <code class="language-plaintext highlighter-rouge">temperature</code> 필드를 <code class="language-plaintext highlighter-rouge">AirConditioner</code> 클래스 외부에서는 접근하지 못하게 막는 것!</span><a href="#이-문제를-근본적으로-해결하는-방법은-temperature-필드를-airconditioner-클래스-외부에서는-접근하지-못하게-막는-것" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-    <p>```java
-package access;</p>
-  </li>
+  <li>이 문제를 근본적으로 해결하는 방법은 <code class="language-plaintext highlighter-rouge">temperature</code> 필드를 <code class="language-plaintext highlighter-rouge">AirConditioner</code> 클래스 외부에서는 접근하지 못하게 막는 것!</li>
 </ul>
 
-<p>public class AirConditioner {</p>
+<hr />
 
-<p>private int temperature;
-  // …
-}</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -1002,68 +1085,64 @@ package access;</p>
 5
 6
 7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-</pre></td><td class="rouge-code"><pre>---
-- `private` 접근 제어자는 모든 외부 호출을 막는다. 해당 클래스 내부에서만 호출 가능
----
-## 🧱 접근 제어자 종류
-자바는 총 4가지 졸유의 접근 제어자 제공
-- `private`: 모든 외부 호출 막음
-- `default`(package-private): 같은 패키지안에서 호출 허용
-- `protected`: 같은 패키지안에서만 호출 허용(패키지가 달라도 상속관계호출은 가능)
-- `public`: 모든 외부 호출 허용
+</pre></td><td class="rouge-code"><pre><span class="kn">package</span> <span class="nn">access</span><span class="o">;</span>
 
-순서대로 `private`가 차단이 높고, public은 차단이 없음
-private -&gt; default -&gt; protected -&gt; public
-
-### package-private란?
-접근제어자를 명시하지 않을때, 같은 패키지 안에서 호출을 허용하는 default접근 제어자가 적용,
-`default` 라는 용어는 해당 접근 제어자가 기본값으로 사용되기 때문에 붙여진 이름이지만, 
-실제로는 `package-private` 가 더 정확한 표현이다.
-정리해서 해당 접근 제어자를 사용하는 멤버는 동일한 패키지 내의 다른 클래스에서만 접근이 가능하다.
-
-##### *접근 제어자 사용 위치*
-접근 제어자는 필드와 메서드, 생성자에 사용(클래스 레벨에도 일부 접근 제어자 사용가능)
-
-#### 접근 제어자의 핵심은 속성과 기능을 외부로부터 숨기는 것!
-- `private`는 사용중인 클래스 안으로 속성과 기능을 숨길 때, (외부클래스 제한)
-- `default`는 사용중인 패키지 안으로 속성과 기능을 숨길 때, (외부패키지 제한)
-- `protected`는 상속 관계로 속성과 기능을 숨길 때, (상속관계가 아니면 제한)
-- `public`은 기능을 숨기지 않음 (어디든 사용가능)
-
-protected 예제
-```java
-package access.parent;
-public class Parent {
-    protected int value = 100;
-}
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AirConditioner</span> <span class="o">{</span>
+  
+  <span class="kd">private</span> <span class="kt">int</span> <span class="n">temperature</span><span class="o">;</span>
+  <span class="c1">// ...</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
+<hr />
+<ul>
+  <li>
+    <h2 id="private-접근-제어자는-모든-외부-호출을-막는다-해당-클래스-내부에서만-호출-가능"><span class="me-2"><code class="language-plaintext highlighter-rouge">private</code> 접근 제어자는 모든 외부 호출을 막는다. 해당 클래스 내부에서만 호출 가능</span><a href="#private-접근-제어자는-모든-외부-호출을-막는다-해당-클래스-내부에서만-호출-가능" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="-접근-제어자-종류"><span class="me-2">🧱 접근 제어자 종류</span><a href="#-접근-제어자-종류" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <p>자바는 총 4가지 졸유의 접근 제어자 제공</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">private</code>: 모든 외부 호출 막음</li>
+  <li><code class="language-plaintext highlighter-rouge">default</code>(package-private): 같은 패키지안에서 호출 허용</li>
+  <li><code class="language-plaintext highlighter-rouge">protected</code>: 같은 패키지안에서만 호출 허용(패키지가 달라도 상속관계호출은 가능)</li>
+  <li><code class="language-plaintext highlighter-rouge">public</code>: 모든 외부 호출 허용</li>
+</ul>
+
+<p>순서대로 <code class="language-plaintext highlighter-rouge">private</code>가 차단이 높고, public은 차단이 없음
+private -&gt; default -&gt; protected -&gt; public</p>
+
+<h3 id="package-private란"><span class="me-2">package-private란?</span><a href="#package-private란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>접근제어자를 명시하지 않을때, 같은 패키지 안에서 호출을 허용하는 default접근 제어자가 적용,
+<code class="language-plaintext highlighter-rouge">default</code> 라는 용어는 해당 접근 제어자가 기본값으로 사용되기 때문에 붙여진 이름이지만, 
+실제로는 <code class="language-plaintext highlighter-rouge">package-private</code> 가 더 정확한 표현이다.
+정리해서 해당 접근 제어자를 사용하는 멤버는 동일한 패키지 내의 다른 클래스에서만 접근이 가능하다.</p>
+
+<h5 id="접근-제어자-사용-위치"><span class="me-2"><em>접근 제어자 사용 위치</em></span><a href="#접근-제어자-사용-위치" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<p>접근 제어자는 필드와 메서드, 생성자에 사용(클래스 레벨에도 일부 접근 제어자 사용가능)</p>
+
+<h4 id="접근-제어자의-핵심은-속성과-기능을-외부로부터-숨기는-것"><span class="me-2">접근 제어자의 핵심은 속성과 기능을 외부로부터 숨기는 것!</span><a href="#접근-제어자의-핵심은-속성과-기능을-외부로부터-숨기는-것" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">private</code>는 사용중인 클래스 안으로 속성과 기능을 숨길 때, (외부클래스 제한)</li>
+  <li><code class="language-plaintext highlighter-rouge">default</code>는 사용중인 패키지 안으로 속성과 기능을 숨길 때, (외부패키지 제한)</li>
+  <li><code class="language-plaintext highlighter-rouge">protected</code>는 상속 관계로 속성과 기능을 숨길 때, (상속관계가 아니면 제한)</li>
+  <li><code class="language-plaintext highlighter-rouge">public</code>은 기능을 숨기지 않음 (어디든 사용가능)</li>
+</ul>
+
+<h3 id="protected-예제"><span class="me-2">protected 예제</span><a href="#protected-예제" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="kn">package</span> <span class="nn">access.parent</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Parent</span> <span class="o">{</span>
+    <span class="kd">protected</span> <span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">100</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+<hr />
+
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1081,6 +1160,7 @@ public class Parent {
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
+
 <hr />
 <p>자바에서 클래스, 필드, 메서드, 생성자의 접근 가능 범위를 제어하는 키워드.
 객체 지향의 중요한 개념인 <strong>캡슐화(Encapsulation)</strong>를 완성하는 핵심 장치.</p>
@@ -1090,6 +1170,7 @@ public class Parent {
 <p>✅ AirConditioner 예제</p>
 
 <p><strong>package access.a</strong></p>
+
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1156,6 +1237,7 @@ public class Parent {
 <hr />
 <p><strong>같은 패키지에서 접근</strong>
 —</p>
+
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1202,7 +1284,9 @@ public class Parent {
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 <hr />
-<p><strong>다른 패키지에서 접근</strong></p>
+<p><strong>다른 패키지에서 접근</strong>
+—</p>
+
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
