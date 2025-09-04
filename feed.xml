@@ -4,7 +4,7 @@
   <id>/</id>
   <title>myNote</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-09-04T15:44:39+09:00</updated>
+  <updated>2025-09-04T15:50:42+09:00</updated>
   <author>
     <name>yun</name>
     <uri>/</uri>
@@ -50,7 +50,7 @@
     <link href="/posts/java-Construct/" rel="alternate" type="text/html" title="생성자(Constructor)" />
     <published>2025-08-28T18:30:00+09:00</published>
   
-    <updated>2025-08-28T18:30:00+09:00</updated>
+    <updated>2025-09-04T15:50:35+09:00</updated>
   
     <id>/posts/java-Construct/</id>
     <content type="text/html" src="/posts/java-Construct/" />
@@ -66,7 +66,7 @@
     
   
 
-  <summary>✅ 생성자  객체를 생성하는 시점에 어떠한 작업을 하려면 생성자(Constructor)를 이용 해야 된다.  1. 필드만 있는 클래스 (CarInit) package construct;  public class CarInit {     String model;     String color;     int maxSpeed; }  2. 값을 일일이 직접 넣는 방식(CarInitMain1) package construct;  public class CarInitMain1 {     public static void main(String[] args) {         CarInit car1 = new CarInit();         car1.model = "Avante";         car1.colo...</summary>
+  <summary>✅ 생성자  객체를 생성하는 시점에 어떠한 작업을 하려면 생성자(Constructor)를 이용 해야 된다.  1. 필드만 있는 클래스 (CarInit) package construct;  public class CarInit {     String model;     String color;     int maxSpeed; }  2. 값을 일일이 직접 넣는 방식 (CarInitMain1) package construct;  public class CarInitMain1 {     public static void main(String[] args) {         CarInit car1 = new CarInit();         car1.model = "Avante";         car1.col...</summary>
 
   </entry>
 
