@@ -4,7 +4,7 @@
   <id>/</id>
   <title>myNote</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-09-03T21:50:19+09:00</updated>
+  <updated>2025-09-04T15:27:26+09:00</updated>
   <author>
     <name>yun</name>
     <uri>/</uri>
@@ -40,7 +40,7 @@
     
   
 
-  <summary>✅ 접근 제어자 이해  접근제어자란? - 해당 클래스 외부에서 특정 필드나 메서드에 접근하는 것을 허용하거나 제한할수있는것.  에어컨 예제)    에어컨은 최고온도나 최저온도를 넘을수 없다.(넘어가면 에어컨이 고장난다.)   아래는 에어컨의 객체다. ```java package access;   public class AirConditioner {     int temperature;  // 생성자 public AirConditioner(int temperature) {     this.temperature = temperature; }  // 온도 올리기 public void increaseTemp() {     if (temperature &amp;gt;= 30) {         System.out.pr...</summary>
+  <summary>✅ 접근 제어자 이해  접근제어자란? - 해당 클래스 외부에서 특정 필드나 메서드에 접근하는 것을 허용하거나 제한할수있는것.  에어컨 예제)    에어컨은 최고온도나 최저온도를 넘을수 없다.(넘어가면 에어컨이 고장난다.)   아래는 에어컨의 객체다.     package access;  public class AirConditioner {     int temperature;      // 생성자     public AirConditioner(int temperature) {         this.temperature = temperature;     }      // 온도 올리기     public void increaseTemp() {         if (temperature &amp;gt;= 30) ...</summary>
 
   </entry>
 
