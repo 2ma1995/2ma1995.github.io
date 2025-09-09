@@ -43,7 +43,7 @@
 <meta property="twitter:title" content="Dispatcher-Servlet" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-09-09T21:13:53+09:00","datePublished":"2025-09-09T21:09:00+09:00","description":"✅ Dispatcher Servlet","headline":"Dispatcher-Servlet","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/spring-dispatcherServlet/"},"url":"/posts/spring-dispatcherServlet/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-09-09T21:15:28+09:00","datePublished":"2025-09-09T21:09:00+09:00","description":"✅ Dispatcher Servlet","headline":"Dispatcher-Servlet","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/spring-dispatcherServlet/"},"url":"/posts/spring-dispatcherServlet/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -735,7 +735,7 @@
 
 <time
   
-  data-ts="1757420033"
+  data-ts="1757420128"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -828,23 +828,11 @@
 <h4 id="--http프로토콜로-들어오는-모든-요청을-가장-먼저-받아-적합한-컨트롤러에-위임해주는-프론트-컨트롤러front-controller"><span class="me-2">- HTTP프로토콜로 들어오는 모든 요청을 가장 먼저 받아, 적합한 컨트롤러에 위임해주는 프론트 컨트롤러(Front Controller)</span><a href="#--http프로토콜로-들어오는-모든-요청을-가장-먼저-받아-적합한-컨트롤러에-위임해주는-프론트-컨트롤러front-controller" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <p>상세설명)</p>
-<ul>
-  <li>
-    <ol>
-      <li>클라이언트로부터 요청(Http프로토콜)이 오면 Tomcat과 같은 서블릿 컨테이너가 요청을 받음.</li>
-    </ol>
-  </li>
-  <li>
-    <ol>
-      <li>이 모든 요청을 프론트 컨트롤러인 디스패처 서블릿(Dispatcher-Servlet)이 가장 먼저 받음.</li>
-    </ol>
-  </li>
-  <li>
-    <ol>
-      <li>요청을 받은 디스패처 서블릿이 공통적인 작업을 먼저 처리후, 해당 요철을 처리하는 컨트롤러를 찾아 작업을 위임.</li>
-    </ol>
-  </li>
-</ul>
+<ol>
+  <li>클라이언트로부터 요청(Http프로토콜)이 오면 Tomcat과 같은 서블릿 컨테이너가 요청을 받음.</li>
+  <li>이 모든 요청을 프론트 컨트롤러인 디스패처 서블릿(Dispatcher-Servlet)이 가장 먼저 받음.</li>
+  <li>요청을 받은 디스패처 서블릿이 공통적인 작업을 먼저 처리후, 해당 요철을 처리하는 컨트롤러를 찾아 작업을 위임.</li>
+</ol>
 
 <h5 id="프론트-컨트롤러란"><span class="me-2">프론트 컨트롤러란?</span><a href="#프론트-컨트롤러란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 <p>서블릿 컨테이너의 제일 앞에서 서버로 들어오는 클라이언트의 모든 요청을 받아서 처리해주는 컨트롤러(MVC)구조에서 함께 사용되는 디자인 패턴.</p>
