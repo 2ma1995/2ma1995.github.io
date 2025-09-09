@@ -4,7 +4,7 @@
   <id>/</id>
   <title>myNote</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-09-04T15:50:42+09:00</updated>
+  <updated>2025-09-09T21:11:48+09:00</updated>
   <author>
     <name>yun</name>
     <uri>/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Dispatcher-Servlet</title>
+    <link href="/posts/spring-dispatcherServlet/" rel="alternate" type="text/html" title="Dispatcher-Servlet" />
+    <published>2025-09-09T21:09:00+09:00</published>
+  
+    <updated>2025-09-09T21:09:00+09:00</updated>
+  
+    <id>/posts/spring-dispatcherServlet/</id>
+    <content type="text/html" src="/posts/spring-dispatcherServlet/" />
+    <author>
+      <name>yun</name>
+    </author>
+
+  
+    
+    <category term="Spring" />
+    
+    <category term="Study" />
+    
+  
+
+  <summary>✅ Dispatcher Servlet  Dispatcher-Servlet이란? - HTTP프로토콜로 들어오는 모든 요청을 가장 먼저 받아, 적합한 컨트롤러에 위임해주는 프론트 컨트롤러(Front Controller)  상세설명)                클라이언트로부터 요청(Http프로토콜)이 오면 Tomcat과 같은 서블릿 컨테이너가 요청을 받음.                       이 모든 요청을 프론트 컨트롤러인 디스패처 서블릿(Dispatcher-Servlet)이 가장 먼저 받음.                       요청을 받은 디스패처 서블릿이 공통적인 작업을 먼저 처리후, 해당 요철을 처리하는 컨트롤러를 찾아 작업을 위임.           프론트 컨트롤러란? 서블릿 컨테이너의 제일...</summary>
+
+  </entry>
 
   
   <entry>
@@ -119,32 +145,6 @@
   
 
   <summary>✅ Java 데이터 타입 분류  자바의 데이터 타입은 크게 두 가지로 나뉜다:     기본형 (Primitive Type)   참조형 (Reference Type)     🧱 기본형 (Primitive Type)     데이터를 직접 값으로 저장한다.   총 8가지 타입이 존재한다.   메모리(stack)에 실제 값을 저장함.                  타입       크기       예시 값                       byte       1B       100                 short       2B       32000                 int       4B       123                 long       8B       123456789...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Java 클래스 요약</title>
-    <link href="/posts/java-class-summary/" rel="alternate" type="text/html" title="Java 클래스 요약" />
-    <published>2025-08-12T15:00:00+09:00</published>
-  
-    <updated>2025-08-28T17:49:14+09:00</updated>
-  
-    <id>/posts/java-class-summary/</id>
-    <content type="text/html" src="/posts/java-class-summary/" />
-    <author>
-      <name>yun</name>
-    </author>
-
-  
-    
-    <category term="Java" />
-    
-    <category term="Study" />
-    
-  
-
-  <summary>📌 클래스와 데이터 문제상황    학생 정보를 다룰 때 이름, 나이, 성적 등 여러 데이터를 저장해야 함   변수로 처리하면: 학생 1명당 3개의 변수 필요 → 학생 늘어나면 코드 폭발   배열로 처리하면: 데이터가 나뉘어 저장됨 → 인덱스 관리 어려움, 실수 위험      💡 클래스를 사용하면 관련 데이터를 묶어서 구조화할 수 있어 유지보수에 유리합니다.   해결책: 클래스  public class Student {   String name;   int age;   int grade; }  하나의 객체에 관련 데이터를 묶어서 표현 Student student1 = new Student(); // Student 클래스 기반 객체 생성 student1.name = "학생";            // 객체...</summary>
 
   </entry>
 
