@@ -4,7 +4,7 @@
   <id>/</id>
   <title>myNote</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-09-10T16:42:48+09:00</updated>
+  <updated>2025-09-12T16:01:45+09:00</updated>
   <author>
     <name>yun</name>
     <uri>/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Spring 3대 요소</title>
+    <link href="/posts/spring-3%EB%8C%80_%EC%9A%94%EC%86%8C/" rel="alternate" type="text/html" title="Spring 3대 요소" />
+    <published>2025-09-12T15:51:00+09:00</published>
+  
+    <updated>2025-09-12T15:51:00+09:00</updated>
+  
+    <id>/posts/spring-3%EB%8C%80_%EC%9A%94%EC%86%8C/</id>
+    <content type="text/html" src="/posts/spring-3%EB%8C%80_%EC%9A%94%EC%86%8C/" />
+    <author>
+      <name>yun</name>
+    </author>
+
+  
+    
+    <category term="Spring" />
+    
+    <category term="Study" />
+    
+  
+
+  <summary>✅ spring 3대 요소    spring 3대 요소 - 스프링은 3 개의 요소가 있다. IoC/DI, PSA, AOP  제어의 역전 (Inversion of Control)  개념    객체 생성 및 의존 관계 관리를 개발자가 아닌 Spring컨테이너에 위임하는 소프트웨어 디자인 원칙   원칙    컴포넌트 의존관계 설정, 설정, 생명주기 를 해결하기 위한 디자인 패턴   장점    낮은 결합도 : 객체간의 의존성을 낮춰 코드의 유연성, 재사용성 증가   높은 응집도 : 객체는 자신의 핵심 기능만 집중하고, 의존성 관리는 컨테이너에 위임하여 코드의 가독성과 유지 보수성이 향상   테스트 용이성 : 컨테이너를 통해 의존성을 쉽게 교체하거나 목 객체(Mock Object)를 주입하여, 단위 테스트를 효...</summary>
+
+  </entry>
 
   
   <entry>
@@ -119,32 +145,6 @@
   
 
   <summary>✅ 생성자  객체를 생성하는 시점에 어떠한 작업을 하려면 생성자(Constructor)를 이용 해야 된다.  1. 필드만 있는 클래스 (CarInit) package construct;  public class CarInit {     String model;     String color;     int maxSpeed; }  2. 값을 일일이 직접 넣는 방식 (CarInitMain1) package construct;  public class CarInitMain1 {     public static void main(String[] args) {         CarInit car1 = new CarInit();         car1.model = "Avante";         car1.col...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>객체 지향 프로그래밍</title>
-    <link href="/posts/java-Object-Oriented-Programming/" rel="alternate" type="text/html" title="객체 지향 프로그래밍" />
-    <published>2025-08-28T17:44:00+09:00</published>
-  
-    <updated>2025-08-28T17:44:00+09:00</updated>
-  
-    <id>/posts/java-Object-Oriented-Programming/</id>
-    <content type="text/html" src="/posts/java-Object-Oriented-Programming/" />
-    <author>
-      <name>yun</name>
-    </author>
-
-  
-    
-    <category term="Java" />
-    
-    <category term="Study" />
-    
-  
-
-  <summary>✅ 절차 지향 프로그래밍 vs 객체지향 프로그래밍     절차 지향 프로그래밍            절차 지향 프로그래밍은 이름 그대로 절차를 지향, 실행순서를 중요하게 생각하는 방식       절차 지향 프로그래밍은 프로그램의 흐름을 순차적으로 따르며 처리, “어떻게”를 중심으로 프로그래밍 한다.           객체 지향 프로그래밍            객체 지향 프로그래밍은 이름 그대로 객체를 지향, 객체를 중요하게 생각하는 방식       객체 지향 프로그래밍은 실제 세계의 사물이나 사건을 객체로 보고, 객체들간의 상호작용을 중심으로 프로그래밍 하는 방식. “무엇을” 중심으로 프로그래밍           둘의 중요한차이            절차지향은 데이터와 해당 데이터에 대한 ㅊ리 방식이 분리 ...</summary>
 
   </entry>
 
